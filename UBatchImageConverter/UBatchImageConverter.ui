@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UBatchImageConverter</class>
+ <widget class="QMainWindow" name="UBatchImageConverter">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>260</width>
+    <height>250</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>UBatchImageConverter</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="margin">
+     <number>2</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QTableView" name="tableView">
+         <property name="selectionMode">
+          <enum>QAbstractItemView::ExtendedSelection</enum>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QToolButton" name="tButtonStart">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="toolTip">
+            <string>Начать</string>
+           </property>
+           <property name="text">
+            <string>Пуск</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/IconStart</normaloff>:/IconStart</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>16</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tButtonSettings">
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/IconSettings</normaloff>:/IconSettings</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tButtonAddImage">
+           <property name="toolTip">
+            <string>Добавить изображение</string>
+           </property>
+           <property name="text">
+            <string>Добавить изображение</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/IconAdd</normaloff>:/IconAdd</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tButtonAddFolder">
+           <property name="toolTip">
+            <string>Добавить папку</string>
+           </property>
+           <property name="text">
+            <string>Добавить папку</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/IconAddFolder</normaloff>:/IconAddFolder</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tButtonRemove">
+           <property name="toolTip">
+            <string>Удалить</string>
+           </property>
+           <property name="text">
+            <string>Удалить</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/IconRemove</normaloff>:/IconRemove</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tButtonRemoveAll">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="toolTip">
+            <string>Удалить все</string>
+           </property>
+           <property name="text">
+            <string>Удалить все</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/IconRemoveAll</normaloff>:/IconRemoveAll</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tButtonShowImageInFolder">
+           <property name="toolTip">
+            <string>Показать изображение в папке</string>
+           </property>
+           <property name="text">
+            <string>Показать изображение в папке</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/IconFolderImage</normaloff>:/IconFolderImage</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tButtonShowInViewer">
+           <property name="toolTip">
+            <string>Показать в просмотрщике</string>
+           </property>
+           <property name="text">
+            <string>Показать в просмотрщике</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/IconDisplay</normaloff>:/IconDisplay</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tButtonSlideshow">
+           <property name="toolTip">
+            <string>Слайд показ</string>
+           </property>
+           <property name="text">
+            <string>Слайд показ</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/IconSlideshow</normaloff>:/IconSlideshow</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>260</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;Файл</string>
+    </property>
+    <addaction name="actionSettings"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuPanels">
+    <property name="title">
+     <string>&amp;Вид</string>
+    </property>
+    <addaction name="actionShowWindowPreview"/>
+    <addaction name="actionShowWindowSettings"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>&amp;Помощь</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuActions">
+    <property name="title">
+     <string>&amp;Действие</string>
+    </property>
+    <addaction name="actionAddImage"/>
+    <addaction name="actionAddFolder"/>
+    <addaction name="separator"/>
+    <addaction name="actionRemove"/>
+    <addaction name="actionRemoveAll"/>
+    <addaction name="separator"/>
+    <addaction name="actionShowImageInFolder"/>
+    <addaction name="actionShowInViewer"/>
+    <addaction name="actionSlideshow"/>
+    <addaction name="separator"/>
+    <addaction name="actionStart"/>
+    <addaction name="separator"/>
+    <addaction name="actionRemoveDuplicateItems"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuPanels"/>
+   <addaction name="menuActions"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action">
+   <property name="text">
+    <string>Предпросмотр</string>
+   </property>
+  </action>
+  <action name="actionShowWindowPreview">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Предпросмотр</string>
+   </property>
+  </action>
+  <action name="actionShowWindowSettings">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Настройки</string>
+   </property>
+  </action>
+  <action name="actionAddImage">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconAdd</normaloff>:/IconAdd</iconset>
+   </property>
+   <property name="text">
+    <string>Добавить изображение</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionAddFolder">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconAddFolder</normaloff>:/IconAddFolder</iconset>
+   </property>
+   <property name="text">
+    <string>Добавить папку</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+O</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconQuit</normaloff>:/IconQuit</iconset>
+   </property>
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconAboutProgram</normaloff>:/IconAboutProgram</iconset>
+   </property>
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+  <action name="actionStart">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconStart</normaloff>:/IconStart</iconset>
+   </property>
+   <property name="text">
+    <string>Конвертировать</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconSettings</normaloff>:/IconSettings</iconset>
+   </property>
+   <property name="text">
+    <string>Настройки</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionRemove">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconRemove</normaloff>:/IconRemove</iconset>
+   </property>
+   <property name="text">
+    <string>Удалить</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R, Del</string>
+   </property>
+  </action>
+  <action name="actionRemoveAll">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconRemoveAll</normaloff>:/IconRemoveAll</iconset>
+   </property>
+   <property name="text">
+    <string>Удалить все</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+R</string>
+   </property>
+  </action>
+  <action name="actionShowImageInFolder">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconFolderImage</normaloff>:/IconFolderImage</iconset>
+   </property>
+   <property name="text">
+    <string>Показать изображение в папке</string>
+   </property>
+  </action>
+  <action name="actionShowInViewer">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconDisplay</normaloff>:/IconDisplay</iconset>
+   </property>
+   <property name="text">
+    <string>Показать в просмотрщике</string>
+   </property>
+  </action>
+  <action name="actionRemoveDuplicateItems">
+   <property name="text">
+    <string>Удалить повторяющиеся изображения</string>
+   </property>
+  </action>
+  <action name="actionSlideshow">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconSlideshow</normaloff>:/IconSlideshow</iconset>
+   </property>
+   <property name="text">
+    <string>Слайд показ</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

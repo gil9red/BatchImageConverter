@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UImageSettingsBatch</class>
+ <widget class="QWidget" name="UImageSettingsBatch">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>338</width>
+    <height>166</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Параметры сохранения</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Путь сохранения&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLineEdit" name="lEditPathSave">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="text">
+             <string>D:\Documents and Settings\Admin\Рабочий стол\convert</string>
+            </property>
+            <property name="placeholderText">
+             <string>Введите путь сохранения</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="tButtonSelectPathSave">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="text">
+             <string>...</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelErrorsDir">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Выходной формат&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBoxWriteFormats"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

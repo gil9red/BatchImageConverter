@@ -1,0 +1,45 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="IconAboutProgram">resource/about.png</file>
+        <file alias="IconAdd">resource/add.png</file>
+        <file alias="IconRemove">resource/remove.png</file>
+        <file alias="IconSettings">resource/settings.png</file>
+        <file alias="IconAddFolder">resource/add folder.png</file>
+        <file alias="IconRemoveAll">resource/remove all.png</file>
+        <file alias="IconFolderImage">resource/folder image.png</file>
+        <file alias="IconStart">resource/start.png</file>
+        <file alias="IconSlideshow">resource/display.png</file>
+        <file alias="IconBMP">resource/formats/bmp.png</file>
+        <file alias="IconGIF">resource/formats/gif.png</file>
+        <file alias="IconICO">resource/formats/ico.png</file>
+        <file alias="IconJPG">resource/formats/jpg.png</file>
+        <file alias="IconMNG">resource/formats/mng.png</file>
+        <file alias="IconPBM">resource/formats/pbm.png</file>
+        <file alias="IconPNG">resource/formats/png.png</file>
+        <file alias="IconPPM">resource/formats/ppm.png</file>
+        <file alias="IconSVG">resource/formats/svg.png</file>
+        <file alias="IconSVGZ">resource/formats/svgz.png</file>
+        <file alias="IconTGA">resource/formats/tga.png</file>
+        <file alias="IconTIF">resource/formats/tif.png</file>
+        <file alias="IconXBM">resource/formats/xbm.png</file>
+        <file alias="IconXPM">resource/formats/xpm.png</file>
+        <file alias="IconAccept">resource/accept.png</file>
+        <file alias="IconCancel">resource/cancel.png</file>
+        <file alias="IconZoomIn">resource/zoom in.png</file>
+        <file alias="IconZoomOut">resource/zoom out.png</file>
+        <file alias="IconQuit">resource/quit.png</file>
+        <file alias="IconDonate">resource/donate.png</file>
+        <file alias="IconProgram">resource/icon.png</file>
+        <file alias="IconTurnCounter">resource/Turn Counter Clockwise.png</file>
+        <file alias="IconClockwise">resource/Rotated Clockwise.png</file>
+        <file alias="IconNormalSize">resource/normal size.png</file>
+        <file alias="IconFitToWindow">resource/fit to window.png</file>
+        <file alias="IconChessGrid">resource/chess grid.png</file>
+        <file alias="IconPrevious">resource/previous.png</file>
+        <file alias="IconNext">resource/next.png</file>
+        <file alias="IconPause">resource/pause.png</file>
+        <file alias="IconDisplay">resource/image.png</file>
+        <file alias="IconNext2">resource/next_2.png</file>
+        <file alias="IconPrevious2">resource/previous_2.png</file>
+    </qresource>
+</RCC>
